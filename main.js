@@ -9,46 +9,55 @@ $(document).ready(function () {
         if (target.length) {
             event.preventDefault();
             $('html, body').stop().animate({
-                scrollTop: target.offset().top -50
+                scrollTop: target.offset().top + 22
             }, 600);
         }
     });
 
-    $('#topBtn').click(function () {
+    $('.uparrow, .logo').on('click', function () {
         $('html, body').animate({scrollTop: 0}, 800);
         return false;
     });
 
-    /* ********************************* HIDE LOGO ON SCROLL *** */
+    /* ******************************** CHANGE NAV ON SCROLL *** */
 
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 1) {
-            $('.header').slideUp(200);
-            $('.nav').css('top', '0').css('height', '4rem');
-            $('.nav-item').css('font-size', '1.5rem');
+        if ($(document).scrollTop() > 790) {
+
+            $('.nav').css({'height': '4rem','padding': '.4rem'});
+
+            $('.logo').css({'border-radius': '.3rem', 'padding': '.5rem 1rem 1rem'});
+
+            $('.logoText').text('!Avoid!').
+            css({'left': '3rem', 'letter-spacing': '.50rem', 'padding-bottom': '2px solid rgba(0, 0, 0, 0.6)'});
+
+            $('.flagDE').css('border-radius', '0 .7rem 0 .7rem'); $('.flagAT').css('border-radius', '.7rem 0 .7rem 0');
+
+            $('.flag').css({'width': '35', 'height': '24'});
+
         } else {
-            $('.header').slideDown(300);
-            $('.nav').css('top', '6rem').css('height', '3rem');
-            $('.nav-item').css('font-size', '1.3rem');
+
+            $('.nav').css({'height': '7rem','padding': '1rem'});
+
+            $('.logo').css({'border-radius': '.8rem .8rem .2rem .2rem', 'padding-top': '.4rem'});
+
+            $('.logoText').html('CALL<br>avoidance!').
+            css({'left': '.6rem', 'letter-spacing': '.55rem', 'text-decoration': 'none', 'border-bottom': 'none'});
+
+            $('.flagDE').css('border-radius', '.7rem 0 .7rem 0'); $('.flagAT').css('border-radius', '0 .7rem 0 .7rem');
+
+            $('.flag').css({'width': '53','height': '37'});
+
         }
     });
 
     /* ***************************************** SHOW - HIDE *** */
 
-
-
     $('.avoidanceBoxToggler').on('click', function () {
-
-        $(this).parent().next().slideToggle(function () {
-
-             /* let $togglerText = $('.avoidanceBoxToggler').text();
-                $togglerText == "AVOID !" ?
-                $('.avoidanceBoxToggler').text('CLOSE') :
-                $('.avoidanceBoxToggler').text('AVOID !'); */
+        $(this).next().slideToggle(function () {
 
         });
     });
-
 
 });
 

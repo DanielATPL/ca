@@ -1,4 +1,4 @@
-/****************************************** Navigation ****/
+/************************************************ Main ****/
 
 * {
     margin: 0;
@@ -6,27 +6,37 @@
     box-sizing: border-box;
 }
 
-.body, html {
-    font-family: 'Karla', sans-serif;
-    color: #232323;
-    background-color: #000;
+.body {
+    position: relative;
+    color: #393939;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(rgba(252, 225, 129, 0.6), rgba(252, 225, 129, 0.7)), url("img/washing-header.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h2, h3, h4 {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .uparrow {
     position: fixed;
-    left: -.3rem;
-    bottom: -.8rem;
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
+    font-size: 4rem;
+    bottom: 1rem;
+    color: rgba(2, 102, 110, 0.9);
 }
 
-.uparrow i {
-    position: absolute;
+.uparrow, .logo {
+    cursor: pointer;
+}
+
+.uparrow1 {
     left: 1rem;
-    top: .6rem;
-    color: #000;
+}
+
+.uparrow2 {
+    right: 1rem;
 }
 
 .ico {
@@ -42,7 +52,8 @@
     padding-left: 1rem;
 }
 
-.ico .small {}
+.ico .small {
+}
 
 .fa-youtube:hover {
     color: rgba(204, 24, 30, 1);
@@ -58,74 +69,148 @@
 /********************************************** Header ****/
 
 .header {
+    height: 100vh;
     width: 100%;
-    position: fixed;
+}
+
+.layer {
+
+    position: absolute;
     top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.intro {
     display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-    background-color: #000;
+    flex-direction: column;
+    position: relative;
+    height: calc(100vh - 6.4rem);
+    width: 75%;
+    margin: 7rem auto 0;
+    padding: 4rem;
+    background-color: rgba(252, 225, 129, 0.3);
+    font-size: 1.7rem;
+    /*border: 5px solid rgba(2, 102, 110, 0.9);*/
+    /*border-top: none;*/
+    border-radius: .5rem;
 }
 
-.header img {
-    width: 12rem;
-    height: 9rem;
+.intro h2 {
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: .3rem;
+    color: #026670;
 }
 
-.header span {
-    font-size: 3rem;
-    padding-top: 2rem;
-    color: #fff;
-    font-family: 'Julius Sans One', sans-serif;
+.intro ul {
+    list-style-position: outside;
+}
+
+.intro ul li {
+    padding: 1.5rem 0;
 }
 
 /****************************************** Navigation ****/
 
 .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     position: fixed;
-    top: 6rem;
+    top: 0;
+    background-color: rgba(2, 102, 112, 0.95);
     width: 100%;
-    height: 3rem;
-    border-bottom: 1px solid #000;
-    background: -moz-linear-gradient(left, rgba(255, 206, 0, 1) 32%, rgba(223, 0, 0, 1) 73%);
-    background: -webkit-linear-gradient(left, rgba(255, 206, 0, 1) 32%, rgba(223, 0, 0, 1) 73%);
-    background: linear-gradient(to right, rgba(255, 206, 0, 1) 32%, rgba(223, 0, 0, 1) 73%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffce00', endColorstr='#df0000', GradientType=1);
-    transition: all 300ms;
+    height: 8rem;
+    padding: 1.3rem;
+    z-index: 1;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 0 1px 1px rgba(252, 225, 129, 0.6);
+}
+
+.logo {
+    position: relative;
+    height: 100%;
+    width: 15rem;
+    background-color: rgba(252, 225, 129, 0.85);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding-top: .4rem;
+    border-radius: .8rem .8rem .3rem .3rem;
+    text-align: center;
+    letter-spacing: .55rem;
+    line-height: 2.3rem;
+}
+
+.logoText {
+    position: absolute;
+    left: .6rem;
+    transition: all 100ms;
+}
+
+.flag {
+    display: inline-block;
+    position: absolute;
+    width: 53px;
+    height: 37px;
+    border: 1px solid #026670;
+    border-radius: .2rem;
+    background-size: contain;
+    opacity: .7;
+}
+
+.flagDE {
+    background-image: url("img/de.svg");
+    border-radius: .7rem 0 .7rem 0;
+    left: .5rem;
+
+}
+
+.flagAT {
+    background-image: url("img/at.svg");
+    border-radius: 0 .7rem 0 .7rem;
+    right: .5rem;
+
+}
+
+.nav, .logo, .flag, .logoText, .nav-item, .nav-item a {
+    transition: all 500ms;
 }
 
 .nav-ul {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     list-style-type: none;
+    font-family: 'Nunito', sans-serif;
 }
 
 .nav-item {
     text-align: center;
-    font-size: 1.3rem;
-    padding: 0 1rem;
-    transition: all 100ms;
+    padding: 0 1.3rem;
+    transition: all 200ms;
 }
 
 .nav-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .nav-item a {
     text-decoration: none;
-    color: #000;
-    transition: all 500ms;
+    color: #FEF9C7;
+    font-size: 1.7rem;
 }
 
 .nav-item a:hover {
-    color: white;
+    color: rgba(252, 225, 129, 0.9);
+
 }
 
-.dropdown, .dropdown2 {
+.fa-arrow-down {
+    font-size: smaller;
+}
+
+.dropdown {
     max-height: 0;
     overflow: hidden;
     position: absolute;
@@ -138,17 +223,9 @@
 
 .dropdown {
     width: 190px;
-    background-color: #FFCE00;
-
 }
 
-.dropdown2 {
-    width: 150px;
-    right: -10px;
-    background-color: #DF0000;
-}
-
-.dropdown li, .dropdown2 li {
+.dropdown li {
     padding-top: .7rem;
     position: relative;
 }
@@ -166,125 +243,91 @@
 /**************************************** Main Section ****/
 
 .main {
-    padding-top: 8rem;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .main section {
-    padding: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
 }
 
-.main section h2 {
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 2rem;
-}
-
-.main section h3 {
+.main h2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    font-weight: lighter;
+    letter-spacing: .8rem;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    background-color: rgba(252, 225, 129, 0.8);
+    /*border: 2px solid rgba(2, 102, 110, 0.9);*/
+    /*border-bottom: none;*/
+    width: 60%;
 }
 
-.main section h4 {
+.main h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    background-color: rgba(226, 223, 218, 0.8);
+    /*border: 2px solid rgba(2, 102, 110, 0.9);*/
+    border-bottom: none;
+    width: 75%;
+}
+
+
+
+.main h4 {
     font-size: 1.8rem;
     font-weight: bolder;
     margin-top: 2rem;
     text-decoration: underline;
 }
 
+.icon {
+    width: 5rem;
+    height: 4rem;
+}
+
 /*************************************** Avoidance Box ****/
 
-.avoidanceBox, .introduction div, .add-info {
+.avoidanceBox, .add-info {
+    width: 80%;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    width: 65%;
+    line-height: 2.5rem;
     margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(252, 225, 129, .9);
+    border: 2px solid rgba(2, 102, 110, .7);
 }
 
-.avoidanceBox span, .introduction span, .add-info span {
+.avoidanceBox span, .add-info span {
     padding: 1rem 0;
 }
 
-.avoidanceBox:last-child {
-    margin-bottom: 3rem;
-}
 
 .avoidanceBoxToggler {
-    margin-left: 1rem;
-    width: 120px;
-    height: 35px;
-    background-color: black;
-    color: white;
-    font-size: 1.2rem;
     cursor: pointer;
-    border: none;
-    border-radius: .2rem;
-    transition: all 300ms;
 }
 
-.avoidanceBoxToggler:hover {
-    color: #DF0000;
+.add-info {
+    background-color: rgba(2, 102, 110, 0.9);
+    color: rgba(252, 225, 129, 0.85);
 }
+
+.add-info h4 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
 
 /******************************************** Sections ****/
-
-.introduction {
-    color: #e6e6e6;
-    background-color: #000;
-}
-
-.introduction h2 {
-    color: #d0d0d0;
-}
-
-.wm_frola {
-    background-color: #FFCE00;
-}
-
-.wm_tola {
-    background-color: #FBB700;
-}
-
-.ind {
-    background-color: #F7A000;
-}
-
-.gs {
-    background-color: #F48900;
-}
-
-.tab p {
-    padding: 1rem 3rem;
-}
-
-.tr {
-    background-color: #F07200;
-}
-
-.ks {
-    background-color: #ED5B00;
-
-}
-
-.gtr {
-    background-color: #E94400;
-}
-
-.bo {
-    background-color: #E62D00;
-}
-
-.kf {
-    background-color: #E21600;
-}
-
-.and {
-    background-color: #DF0000;
-}
-
-
 
