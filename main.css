@@ -13,12 +13,17 @@
     font-family: 'Ubuntu', sans-serif;
     background: linear-gradient(rgba(252, 225, 129, 0.8), rgba(252, 225, 129, 0.4)), url("img/washing-header.jpg") no-repeat center center fixed;
     background-size: cover;
+    padding-bottom: 5rem;
+}
+
+.avoidanceBox a {
+    color: rgba(2, 102, 110, 0.9);
 }
 
 .uparrow {
     position: fixed;
     font-size: 4rem;
-    bottom: 1rem;
+    bottom: 3rem;
     color: rgba(2, 102, 110, 0.9);
 }
 
@@ -48,7 +53,9 @@
     padding-left: 1rem;
 }
 
-.ico .small {
+.fa-youtube.small-ico {
+    color: rgba(204, 24, 30, .7);
+    font-size: 3.5rem;
 }
 
 .fa-youtube:hover {
@@ -74,6 +81,11 @@
     border-radius: .8rem .8rem 0 .8rem;
 }
 
+.iframe {
+    border: 7px solid rgba(2, 102, 110, 0.9);
+    margin: 0 auto;
+}
+
 /********************************************** Header ****/
 
 .header {
@@ -82,7 +94,6 @@
     left: 0;
     width: 100%;
 }
-
 
 .intro {
     display: flex;
@@ -124,6 +135,7 @@
     font-weight: bold;
     font-size: 1.8rem;
 }
+
 /****************************************** Navigation ****/
 
 .nav {
@@ -198,7 +210,6 @@
 .nav-ul {
     display: flex;
     list-style-type: none;
-    font-family: 'Roboto Slab', serif;
 }
 
 .nav-item {
@@ -212,9 +223,11 @@
 }
 
 .nav-item a {
+    font-family: 'Roboto Slab', serif;
     text-decoration: none;
     color: #FEF9C7;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .nav-item a:hover {
@@ -271,8 +284,6 @@
     margin-top: 1px;
 }
 
-
-
 .main h4 {
     display: flex;
     justify-content: space-between;
@@ -286,7 +297,7 @@
     margin: 1px auto 0;
 }
 
-h4.add-info-header  {
+h4.add-info-header {
     color: rgba(226, 223, 218, 0.8);
 }
 
@@ -316,15 +327,15 @@ h4.add-info-header  {
 
 .avoidanceBox {
     box-shadow: inset 0 25px 25px rgba(226, 223, 218, 0.2);
-    border-left: 1px solid rgba(2, 102, 110, 0.9);
-    border-right: 1px solid rgba(2, 102, 110, 0.9);
+    border-left: 10px solid rgba(226, 223, 218, 0.8);
+    border-right: 10px solid rgba(226, 223, 218, 0.8);
 }
 
 .add-info {
     box-shadow: none;
 }
 
-.avoidanceBox span, .add-info span,.procedure span {
+.avoidanceBox span, .add-info span, .procedure span {
     padding: 1rem 0;
 }
 
@@ -401,4 +412,50 @@ h4.add-info-header  {
 .popup.owi:hover span {
     background: url(img/gs-owi-sensor.png) -100px;
     background-size: cover;
+}
+
+.popup.abflussloch:hover span {
+    background: url(img/gs-abfluss.png) -100px;
+    background-size: cover;
+}
+
+.popup.siphon:hover span {
+    background: url(img/gs-siphon.jpg) -100px;
+    background-size: cover;
+}
+
+.popup.bo-sensorloch:hover span {
+    background: url(img/bo-sensorloch.png);
+    background-size: cover;
+}
+
+.popup.tr-abflussventil:hover span {
+    background: url(img/tr-abflussventil.png);
+    background-size: cover;
+}
+
+.popup.tr-temperaturfuehler:hover span {
+    background: url(img/tr-temepraturfuehler.png);
+    background-size: cover;
+}
+
+/********************************************** Footer ****/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .4rem 1rem;
+    width: 100%;
+    background-color: rgba(2, 102, 110, 0.9);
+    font-size: 1.1rem;
+    color: aliceblue;
+}
+
+.footer a {
+    color: aliceblue;
 }
