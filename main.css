@@ -10,14 +10,9 @@
     position: relative;
     color: #393939;
     font-size: 15px;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
-    background: linear-gradient(rgba(252, 225, 129, 0.6), rgba(252, 225, 129, 0.7)), url("img/washing-header.jpg") no-repeat center center fixed;
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(rgba(252, 225, 129, 0.6), rgba(2, 102, 110, 0.7)), url("img/washing-header.jpg") no-repeat center center fixed;
     background-size: cover;
-}
-
-h2, h3, h4 {
-    font-family: 'Open Sans', sans-serif;
 }
 
 .uparrow {
@@ -44,6 +39,7 @@ h2, h3, h4 {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    font-weight: 300;
 }
 
 .ico .fa-youtube {
@@ -59,48 +55,53 @@ h2, h3, h4 {
     color: rgba(204, 24, 30, 1);
 }
 
+.fa-angle-double-right {
+    padding: 0 .5rem
+}
+
+.fa-plus-square {
+    color: rgba(2, 102, 110, 0.9);
+}
+
+.add-info-header .fa-plus-square {
+    color: rgba(252, 225, 129, 0.8);
+}
+
 .reset-button {
-    background-color: #000;
-    color: #fff;
-    padding: 0 .6rem 0 .4rem;
-    border-radius: .3rem;
+    background-color: rgba(226, 223, 218, 0.8);
+    color: rgba(2, 102, 110, 0.9);
+    padding: .1rem .4rem .1rem .4rem;
+    border-radius: .8rem .8rem 0 .8rem;
 }
 
 /********************************************** Header ****/
 
 .header {
-    height: 100vh;
-    width: 100%;
-}
-
-.layer {
-
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    height: 100vh;
     width: 100%;
 }
+
 
 .intro {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: calc(100vh - 6.4rem);
-    width: 75%;
-    margin: 7rem auto 0;
+    width: 70%;
+    margin: 6rem auto;
     padding: 4rem;
-    background-color: rgba(252, 225, 129, 0.3);
-    font-size: 1.7rem;
-    /*border: 5px solid rgba(2, 102, 110, 0.9);*/
-    /*border-top: none;*/
+    background-color: rgba(226, 223, 218, 0.6);
+    font-size: 1.4rem;
     border-radius: .5rem;
+    border: 1px solid rgba(2, 102, 112, 0.95);
 }
 
 .intro h2 {
     text-align: center;
     font-weight: 900;
     letter-spacing: .3rem;
+    font-family: 'Roboto Slab', serif;
     color: #026670;
 }
 
@@ -109,9 +110,20 @@ h2, h3, h4 {
 }
 
 .intro ul li {
-    padding: 1.5rem 0;
+    padding: .7rem 0;
+    line-height: 2.7rem;
 }
 
+.intro ul ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+.important {
+    color: #b20813;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
 /****************************************** Navigation ****/
 
 .nav {
@@ -122,8 +134,8 @@ h2, h3, h4 {
     top: 0;
     background-color: rgba(2, 102, 112, 0.95);
     width: 100%;
-    height: 8rem;
-    padding: 1.3rem;
+    height: 7rem;
+    padding: .8rem;
     z-index: 1;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     box-shadow: 1px 0 1px 1px rgba(252, 225, 129, 0.6);
@@ -135,10 +147,10 @@ h2, h3, h4 {
     width: 15rem;
     background-color: rgba(252, 225, 129, 0.85);
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     padding-top: .4rem;
-    border-radius: .8rem .8rem .3rem .3rem;
+    border-radius: .8rem .8rem 0 0;
     text-align: center;
     letter-spacing: .55rem;
     line-height: 2.3rem;
@@ -146,7 +158,8 @@ h2, h3, h4 {
 
 .logoText {
     position: absolute;
-    left: .6rem;
+    left: 1.2rem;
+    bottom: .4rem;
     transition: all 100ms;
 }
 
@@ -165,14 +178,12 @@ h2, h3, h4 {
     background-image: url("img/de.svg");
     border-radius: .7rem 0 .7rem 0;
     left: .5rem;
-
 }
 
 .flagAT {
     background-image: url("img/at.svg");
     border-radius: 0 .7rem 0 .7rem;
     right: .5rem;
-
 }
 
 .nav, .logo, .flag, .logoText, .nav-item, .nav-item a {
@@ -182,7 +193,7 @@ h2, h3, h4 {
 .nav-ul {
     display: flex;
     list-style-type: none;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .nav-item {
@@ -198,46 +209,12 @@ h2, h3, h4 {
 .nav-item a {
     text-decoration: none;
     color: #FEF9C7;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .nav-item a:hover {
     color: rgba(252, 225, 129, 0.9);
 
-}
-
-.fa-arrow-down {
-    font-size: smaller;
-}
-
-.dropdown {
-    max-height: 0;
-    overflow: hidden;
-    position: absolute;
-    padding-bottom: .5rem;
-    text-align: center;
-    list-style-type: none;
-    transition: all 600ms;
-    border-radius: .15rem;
-}
-
-.dropdown {
-    width: 190px;
-}
-
-.dropdown li {
-    padding-top: .7rem;
-    position: relative;
-}
-
-.nav-item:first-of-type:hover .dropdown {
-    max-height: 12rem;
-    border-bottom: 1px solid #000;
-}
-
-.nav-item:last-of-type:hover .dropdown2 {
-    max-height: 12rem;
-    border-bottom: 1px solid #000;
 }
 
 /**************************************** Main Section ****/
@@ -247,52 +224,76 @@ h2, h3, h4 {
 }
 
 .main section {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
-    padding: 3rem 0;
 }
 
 .main h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 4rem;
-    font-weight: lighter;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
     letter-spacing: .8rem;
-    margin: 2rem auto 0;
-    padding: 1rem;
+    text-align: center;
+    border: 1px solid rgba(2, 102, 110, 0.9);
+    border-bottom: 0;
+    border-radius: 10% 10% 0 0;
+    margin: 10rem auto 0;
+    padding: 1.8rem .8rem;
+    color: rgba(2, 102, 110, 0.9);
     background-color: rgba(252, 225, 129, 0.8);
-    /*border: 2px solid rgba(2, 102, 110, 0.9);*/
-    /*border-bottom: none;*/
-    width: 60%;
+    width: 50%;
 }
 
 .main h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2rem;
+    font-family: 'Roboto', serif;
+    font-size: 1.8rem;
+    font-weight: lighter;
     letter-spacing: .5rem;
     margin: 0 auto;
-    padding: 1.5rem 1rem;
+    padding: 1.2rem 1rem;
     background-color: rgba(226, 223, 218, 0.8);
-    /*border: 2px solid rgba(2, 102, 110, 0.9);*/
     border-bottom: none;
-    width: 75%;
+    width: 85%;
+}
+
+.main article:first-of-type h3 {
+    border-radius: 12% 12% 0 0;
+    margin-top: 1px;
 }
 
 
 
 .main h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(2, 102, 112, 0.9);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1px auto 0;
+}
+
+h4.add-info-header  {
+    color: rgba(226, 223, 218, 0.8);
+}
+
+.main h5 {
+    margin-top: 1rem;
+    text-align: center;
     font-size: 1.8rem;
-    font-weight: bolder;
-    margin-top: 2rem;
-    text-decoration: underline;
 }
 
 .icon {
-    width: 5rem;
-    height: 4rem;
+    width: 4rem;
+    height: 3rem;
 }
 
 /*************************************** Avoidance Box ****/
@@ -301,33 +302,98 @@ h2, h3, h4 {
     width: 80%;
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2.5rem;
     margin: 0 auto;
     padding: 2rem;
-    background-color: rgba(252, 225, 129, .9);
-    border: 2px solid rgba(2, 102, 110, .7);
+    background-color: rgba(252, 225, 129, .8);
 }
 
-.avoidanceBox span, .add-info span {
+.avoidanceBox {
+    box-shadow: inset 0 25px 25px rgba(226, 223, 218, 0.2);
+    border-left: 1px solid rgba(2, 102, 110, 0.9);
+    border-right: 1px solid rgba(2, 102, 110, 0.9);
+}
+
+.add-info {
+    box-shadow: none;
+}
+
+.avoidanceBox span, .add-info span,.procedure span {
     padding: 1rem 0;
 }
-
 
 .avoidanceBoxToggler {
     cursor: pointer;
 }
 
-.add-info {
-    background-color: rgba(2, 102, 110, 0.9);
+.add-info, .add-info-header {
+    background-color: rgba(2, 102, 110, 0.8);
     color: rgba(252, 225, 129, 0.85);
 }
 
-.add-info h4 {
-    text-align: center;
-    font-size: 2.2rem;
+.add-info-header {
+    width: 50%;
 }
 
+.procedure {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(226, 223, 218, 0.4);
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    padding: 1rem 4rem;
+    margin-bottom: 2rem;
+}
 
-/******************************************** Sections ****/
+.procedure li {
+    padding-bottom: 1rem;
+}
 
+.procedure-semi-narrow {
+    width: 70%;
+    margin: 0 auto 2rem;
+}
+
+.procedure-narrow {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.procedure-very-narrow {
+    width: 40%;
+    margin: 0 auto 2rem;
+}
+
+.method {
+    line-height: 3.5rem;
+    padding: 1rem 4rem;
+}
+
+/***************************************** Image Hover ****/
+
+.popup {
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.popup span {
+    display: none;
+}
+
+.popup:hover span {
+    display: block;
+    position: absolute;
+    width: 320px;
+    height: 310px;
+    left: 150px;
+    top: -300px;
+    border: 10px solid rgba(2, 102, 110, 0.8);
+    border-radius: 1rem;
+}
+
+.popup.owi:hover span {
+    background: url(img/gs-owi-sensor.png) -100px;
+    background-size: cover;
+}
