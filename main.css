@@ -186,6 +186,11 @@
     right: .5rem;
 }
 
+.nav .beta {
+    font-size: 1.5rem;
+    color: firebrick;
+}
+
 .nav, .logo, .flag, .logoText, .nav-item, .nav-item a {
     transition: all 500ms;
 }
