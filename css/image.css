@@ -1,0 +1,58 @@
+/***************************************** Image Hover ****/
+
+.popup {
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.popup span {
+    display: none;
+}
+
+.popup:hover span {
+    display: block;
+    position: absolute;
+    width: 320px;
+    height: 310px;
+    left: 150px;
+    top: -300px;
+    border: 10px solid rgba(2, 102, 110, 0.8);
+    border-radius: 1rem;
+}
+
+.popup.owi:hover span {
+    background: url(../img/gs-owi-sensor.png) -100px;
+    background-size: cover;
+}
+
+.popup.abflussloch:hover span {
+    background: url(../img/gs-abfluss.png) -100px;
+    background-size: cover;
+}
+
+.popup.siphon:hover span {
+    background: url(../img/gs-siphon.jpg) -100px;
+    background-size: cover;
+}
+
+.popup.bo-sensorloch:hover span {
+    background: url(../img/bo-sensorloch.png);
+    background-size: cover;
+}
+
+.popup.tr-abflussventil:hover span {
+    background: url(../img/tr-abflussventil.png);
+    background-size: cover;
+}
+
+.popup.tr-temperaturfuehler:hover span {
+    background: url(../img/tr-temepraturfuehler.png);
+    background-size: cover;
+}
+
+.popup.tr-restfeuchte:hover span {
+    background: url(../img/tr-restfeuchte.jpg);
+    background-size: cover;
+}
+

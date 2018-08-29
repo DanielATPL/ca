@@ -1,0 +1,208 @@
+/*************************************** Avoidance Box ****/
+
+.error-code-toggler,
+.avoidance-box-toggler,
+.add-info-toggler {
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.main {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.main section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.main article:first-of-type h3 {
+    border-radius: 12% 12% 0 0;
+    border-top: 3px solid rgba(2, 102, 110, 0.9);
+}
+
+.main article:nth-last-child(2) h3 {
+    border-radius: 0 0 12% 12%;
+    border-bottom: 3px solid rgba(252, 225, 129, 0.9);
+}
+
+.main article:nth-last-child(2) .avoidance-box {
+    width: 70%;
+    border-radius: 0 0 5rem 5rem / 0 0 .7rem .7rem;
+    border-bottom: 3px solid rgba(2, 102, 110, 0.8);
+}
+
+
+.main span {
+    padding: 1rem 0;
+}
+
+
+.avoidance-box-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
+    letter-spacing: .8rem;
+    text-align: center;
+    border-top: 3px solid rgba(2, 102, 110, 0.9);
+    border-radius: 10% 10% 0 0;
+    margin: 10rem auto 0;
+    padding: 1.5rem .8rem;
+    color: rgba(2, 102, 110, 0.9);
+    background-color: rgba(252, 225, 129, 0.9);
+    width: 60%;
+}
+
+.avoidance-box-toggler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', serif;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    letter-spacing: .5rem;
+    margin: 0 auto;
+    padding: 1.2rem 1rem;
+    background-color: rgba(226, 223, 218, 0.95);
+    border-right: 3px solid rgba(2, 102, 110, 0.9);
+    border-left: 3px solid rgba(252, 225, 129, 0.9);
+    border-bottom: none;
+    width: 92%;
+    height: 70px;
+}
+
+.avoidance-box-toggler:hover {
+    font-size: 1.7rem;
+}
+
+.add-info-toggler:hover {
+    font-size: 2.1rem;
+}
+
+.avoidance-box-toggler:hover .fa-plus-square {
+    transform: scale(1.1);
+}
+
+.avoidance-box-toggler:hover .fa-minus-square {
+    transform: scale(1.1);
+}
+
+.avoidance-box {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(252, 225, 129, .9);
+}
+
+.avoidance-box h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(2, 102, 112, 0.9);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.avoidance-box h5 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.avoidance-box a {
+    color: rgba(2, 102, 110, 0.9);
+}
+
+
+.add-info-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(2, 102, 110, 0.9);
+    color: rgba(252, 225, 129, 0.85);
+    border-top: none;
+    border-radius: 0 0 5rem 5rem / 0 0 .7rem .7rem;
+}
+
+.add-info-toggler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 50%;
+    height: 70px;
+    background-color: rgba(2, 102, 110, 0.9);
+    color: rgba(252, 225, 129, 0.85);
+    cursor: pointer;
+    border-top: 0;
+    border-radius: 0 0 10% 10%;
+    border-bottom: 3px solid rgba(252, 225, 129, 0.9);
+}
+
+.add-info-toggler .fa-plus-square {
+    color: rgba(252, 225, 129, .9);
+}
+
+
+.procedure {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(226, 223, 218, 0.4);
+    font-size: 1.3rem;
+    line-height: 2.7rem;
+    padding: 1rem 4rem;
+    margin: 1rem 0;
+}
+
+.procedure li {
+    padding-bottom: 1rem;
+}
+
+.procedure-narrow {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.procedure-semi-narrow {
+    width: 70%;
+    margin: 0 auto 2rem;
+}
+
+.procedure-very-narrow {
+    width: 40%;
+    margin: 0 auto 2rem;
+}
+
+
+.error-code-box {
+    display: inherit;
+    flex-direction: inherit;
+}
+
+.error-code-toggler i {
+    margin: 0 1.5rem;
+}
+
+.method {
+    line-height: 3.5rem;
+    padding: 1rem 4rem;
+}

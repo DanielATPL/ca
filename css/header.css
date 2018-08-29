@@ -1,0 +1,61 @@
+/********************************************** Header ****/
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    margin: 7rem auto;
+    padding: 2rem 5rem;
+    background-color: rgba(226, 223, 218, 0.9);
+    font-size: 1.4rem;
+    border-radius: 0 0 .5rem .5rem;
+    border: 1px solid rgba(2, 102, 112, 0.95);
+}
+
+.intro h2 {
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: .3rem;
+    font-family: 'Roboto Slab', serif;
+    color: #026670;
+}
+
+.intro ul {
+    list-style-position: outside;
+}
+
+.intro ul li {
+    padding: .7rem 0;
+    line-height: 2.7rem;
+}
+
+.intro ul ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+.intro-questions {
+    width: 75%;
+    margin: .5rem auto;
+    padding: .3rem 0 .8rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-radius: .2rem;
+}
+
+.important {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+hr {
+    margin: .5rem 0;
+}
